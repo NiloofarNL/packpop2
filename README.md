@@ -6,14 +6,18 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of packpop2 is to …
+The goal of Populationpack is to analyze information about population based on number of families, owners, tenants and residential units of all blocks in Mashhad, Iran.
 
 ## Installation
 
 You can install the development version of packpop2 like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```{r setup, force = TRUE}
+if(!require(remotes)){
+    install.packages("remotes")
+    library(remotes)
+}
+remotes::install_github("NiloofarNL/packpop2")
 ```
 
 ## Example
@@ -24,19 +28,27 @@ This is a basic example which shows you how to solve a common problem:
 library(packpop2)
 ## basic example code
 ```
+#'Population density in each block
+#'
+#' @param a A number of population in a block
+#' @param b A number of Shape_Area in a block
+#' @return The product of \code{a} and \code{b}
+#' @export
+#' @examples
+#' population_density(96, 9250)
+#' population_density(108, 13246)
+population_density <- function(a, b){
+  a/b
+}
+
 
 What is special about using `README.Rmd` instead of just `README.md`?
 You can include R chunks like so:
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+library(packpop2)
+summary(pop2016)
+
 ```
 
 You’ll still need to render `README.Rmd` regularly, to keep `README.md`

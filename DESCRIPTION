@@ -14,3 +14,7 @@ Depends:
 LazyData: true
 URL: https://github.com/NiloofarNL/packpop2
 BugReports: https://github.com/NiloofarNL/packpop2/issues
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr
