@@ -6,18 +6,18 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-#packpop
+# packpop
 
 ## This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each block in 2016. This dataset contains 11 variables and 19943 rows.
 
-###***source:*** WWW.amar.org.ir
+### **source:** WWW.amar.org.ir
 
-#Install the package
+# Install the package
 As a fundamental step, there is a need to install population package if you want to use this data set.
 
 Here is a chunk in order to install the package:
 
-```{r setup, force = TRUE}
+```{r setup, message=FALSE, force = TRUE}
 if(!require(remotes)){
     install.packages("remotes")
     library(remotes)
