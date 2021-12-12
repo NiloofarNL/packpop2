@@ -7,10 +7,12 @@
 <!-- badges: end -->
 
 The goal of Populationpack is to analyze information about population based on number of families, owners, tenants and residential units of all blocks in Mashhad, Iran.
+By clicking on [here](https://niloofarnl.github.io/packpop2/reference/population_density.html) you can have access to the vignettes.
 
 ## Installation
 
 You can install the development version of packpop2 like so:
+
 
 ```{r setup, force = TRUE}
 if(!require(remotes)){
