@@ -49,6 +49,18 @@
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="../articles/articles/packpop2-vignette.html">Mashhad population</a>
+    </li>
+  </ul>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
@@ -80,9 +92,9 @@
 
     
     
-<div id="packpop" class="section level1">
+<div id="packpop2" class="section level1">
 <h1 class="hasAnchor">
-<a href="#packpop" class="anchor"></a>packpop</h1>
+<a href="#packpop2" class="anchor"></a>packpop2</h1>
 <div id="this-data-provides-information-about-population-of-mashhad-metropolice-based-on-familiesowners-tenants-and-so-on-in-each-block-in-2016--this-dataset-contains-11-variables-and-19943-rows-" class="section level2">
 <h2 class="hasAnchor">
 <a href="#this-data-provides-information-about-population-of-mashhad-metropolice-based-on-familiesowners-tenants-and-so-on-in-each-block-in-2016--this-dataset-contains-11-variables-and-19943-rows-" class="anchor"></a>This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each block in 2016. This dataset contains 11 variables and 19943 rows.</h2>
@@ -98,7 +110,8 @@
 <p>As a fundamental step, there is a need to install population package if you want to use this data set.</p>
 <p>Here is a chunk in order to install the package:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org">remotes</a></span><span class="op">)</span><span class="op">)</span><span class="op">{</span>
+<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/knitr/man/opts_chunk.html">opts_chunk</a></span><span class="op">$</span><span class="fu">set</span><span class="op">(</span>message <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
+<span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org">remotes</a></span><span class="op">)</span><span class="op">)</span><span class="op">{</span>
     <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span>
     <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org">remotes</a></span><span class="op">)</span>
 <span class="op">}</span>
@@ -106,14 +119,16 @@
 <pre><code>##   
   
   
-   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpMBCcNh\remotes16603e671988\NiloofarNL-packpop2-0566b37/DESCRIPTION' ...
+   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpCwK0C0\remotes24606bd463c\NiloofarNL-packpop2-6ced4a6/DESCRIPTION' ...
   
-v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpMBCcNh\remotes16603e671988\NiloofarNL-packpop2-0566b37/DESCRIPTION' (441ms)
+   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpCwK0C0\remotes24606bd463c\NiloofarNL-packpop2-6ced4a6/DESCRIPTION' ... 
+  
+v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpCwK0C0\remotes24606bd463c\NiloofarNL-packpop2-6ced4a6/DESCRIPTION' (478ms)
 ## 
   
   
   
--  preparing 'packpop2': (380ms)
+-  preparing 'packpop2': (360ms)
 ##    checking DESCRIPTION meta-information ...
   
    checking DESCRIPTION meta-information ... 
@@ -125,8 +140,6 @@ v  checking DESCRIPTION meta-information
   
 -  checking for LF line-endings in source and make files and shell scripts
 ## 
-  
-  
   
 -  checking for empty or unneeded directories
 ## 
@@ -168,12 +181,7 @@ v  checking DESCRIPTION meta-information
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NiloofarNL/packpop2">packpop2</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></code></pre></div>
 <p>As mentioned before, this data set has 11 variables</p>
-<table class="table">
-<colgroup>
-<col width="21%">
-<col width="78%">
-</colgroup>
-<tbody>
+<table class="table"><tbody>
 <tr class="odd">
 <td>OBJECTID</td>
 <td>Id of each block as a factor</td>
@@ -218,8 +226,7 @@ v  checking DESCRIPTION meta-information
 <td>Shape_Area</td>
 <td>Surface area of a block in meter scale</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>Also we can see the bar chart of population in each block</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">pop2016</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">OBJECTID</span>, y <span class="op">=</span> <span class="va">population</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
