@@ -1,9 +1,9 @@
 ---
 title: "packpop2-vignette"
 ---
-# packpop2
+## packpop2
 
-## This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each block in 2016. There a number of different targets that can be reached through this package such as population density  This dataset contains 11 variables and 19943 rows.    
+This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each block in 2016. There a number of different targets that can be reached through this package such as population density  This dataset contains 11 variables and 19943 rows.    
 
 [source](https://amar.org.ir/)
 
