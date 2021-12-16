@@ -46,7 +46,7 @@ As mentioned before, this data set has 14 variables
 |-------------------------|--------------------------------------------------------|
 | OBJECTID                | Id of each block as a factor                           |
 | Neighbourhoods          | The names of Mashhad's neighbourhoods                  |
-| Family                  | Number of families living in a block                   |
+| Families                  | Number of families living in a block                   |
 | Owners                  | Number of people who has their own property in a block |
 | Tenants                 | Number of people who rent a property in a block        |
 | Total Residential Units | Whole number of residential suits in a block           |

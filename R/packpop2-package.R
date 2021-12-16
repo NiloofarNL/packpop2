@@ -25,7 +25,7 @@ NULL
 #' \describe{
 #'   \item{OBJECTID}{Id of each block as a factor}
 #'   \item{Neighbourhoods}{The names of Mashhad's neighbourhoods}
-#'   \item{Family}{Number of families living in a block}
+#'   \item{Families}{Number of families living in a block}
 #'   \item{Owners}{Number of people who has their own property in a block}
 #'   \item{Tenants}{Number of people who rent a property in a block}
 #'   \item{Total Residential Units}{Whole number of residencial suits in a block}
