@@ -19,6 +19,7 @@ a sample dataset with their respective documentation.
 Useful links:
 \itemize{
   \item \url{https://github.com/NiloofarNL/packpop2}
+  \item \url{https://niloofarnl.github.io/packpop2}
   \item Report bugs at \url{https://github.com/NiloofarNL/packpop2/issues}
 }
 
