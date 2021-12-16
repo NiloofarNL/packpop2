@@ -12,7 +12,7 @@ NULL
 #' a sample dataset with their respective documentation.
 #'
 #' @docType package
-#' @name packpop2
+#' @name packpop2-package
 #' @author Niloofar Nalaee, School of Earth, Environment and Society, McMaster University \email{nalaeen@@mcmaster.ca}
 #' @references \url{https://github.com/NiloofarNL/packpop2}
 NULL
