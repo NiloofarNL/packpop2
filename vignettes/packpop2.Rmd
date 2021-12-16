@@ -7,6 +7,7 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
 ## packpop2
 
 This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each block in 2016. There a number of different targets that can be reached through this package such as population density This dataset contains 11 variables and 19943 rows.
@@ -75,10 +76,9 @@ ggplot(data = Population2016, aes(x = OBJECTID, y = Population)) +
 
 Here is another map
 
-
 ![Mashhad's Neighbourhoods in 2016](MashhadNeighbours.png)
 
-[@chen2008wave]
+Assuming that population density \rho(r) at distance r from the city center declines monotonically, [@chen2008wave]reintroduce an empirical model that can be written as
 
 ```{=tex}
 \begin{equation}
@@ -86,4 +86,6 @@ Here is another map
 \rho(r) = \rho_0 exp (-br) = \rho_0 exp (-\frac{r}{r_0})
 \end{equation}
 ```
+Where $\rho_0$ is a constant of propotionality which is supposed to equal the central density, that is, $\rho\_0 = \rho(0)$, $b$ denotes a rate at which the effect of distance attenuates, and $r_0 = 1/b$ refers to a characteristic radius of urban population distribution.
+
 # Bibliography

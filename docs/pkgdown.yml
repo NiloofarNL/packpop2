@@ -2,6 +2,6 @@ pandoc: 2.14.0.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
-  articles/packpop2-vignette: packpop2-vignette.html
-last_built: 2021-12-16T19:42Z
+  packpop2: packpop2.html
+last_built: 2021-12-16T20:18Z
 
