@@ -7,6 +7,13 @@
 \title{packpop2: What the Package Does (One Line, Title Case)}
 \description{
 What the package does (one paragraph).
+
+This package is an exercise in package creation using
+R studio. The package includes a sample function and
+a sample dataset with their respective documentation.
+}
+\references{
+\url{https://github.com/NiloofarNL/packpop2}
 }
 \seealso{
 Useful links:
@@ -19,5 +26,7 @@ Useful links:
 \author{
 \strong{Maintainer}: Niloofar Nalaee \email{nalaeen@mcmaster.ca} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
 
+
+Niloofar Nalaee, School of Earth, Environment and Society, McMaster University \email{nalaeen@mcmaster.ca}
 }
 \keyword{internal}

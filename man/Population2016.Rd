@@ -19,7 +19,7 @@ A data frame with 173 rows and 14 variables:
 \item{Shape_Length}{Surrounding a block in meter scale}
 \item{Shape_Area}{Surface area of a block in meter scale}
 \item{Area(Hectare)}{Surface area of a neighbourhoods in hectare scale}
-\item{Population Density}{Population density of each neighbourhood}
+\item{PopulationDensity}{Population density of each neighbourhood}
 \item{Population}{Whole population of each neighbourhood}
 }
 }
