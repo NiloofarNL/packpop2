@@ -41,8 +41,7 @@ NULL
 #'
 #' @docType data
 #' @keywords datasets
-#' @name Population2016
-#' @usage data(Population2016)
+#' @name Population2016#' @usage data(Population2016)
 #' @source (https://WWW.amar.org.ir)
 
 #' @examples

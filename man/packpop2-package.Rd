@@ -4,9 +4,9 @@
 \name{packpop2-package}
 \alias{packpop2}
 \alias{packpop2-package}
-\title{packpop2: What the Package Does (One Line, Title Case)}
+\title{packpop2: Mashhad Population in 2016}
 \description{
-What the package does (one paragraph).
+Mashhad Population in 2016.
 
 This package is an exercise in package creation using
 R studio. The package includes a sample function and

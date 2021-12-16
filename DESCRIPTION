@@ -1,10 +1,10 @@
 Package: packpop2
-Title: What the Package Does (One Line, Title Case)
+Title: Mashhad Population in 2016
 Version: 0.0.0.9000
 Authors@R: 
     person("Niloofar", "Nalaee", , "nalaeen@mcmaster.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Mashhad Population in 2016.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

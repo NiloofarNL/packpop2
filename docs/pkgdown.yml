@@ -2,8 +2,8 @@ pandoc: 2.14.0.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
-  packpop2: packpop2.html
-last_built: 2021-12-16T21:55Z
+  packpop2-vignette: packpop2-vignette.html
+last_built: 2021-12-16T22:00Z
 urls:
   reference: https://niloofarnl.github.io/packpop2/reference
   article: https://niloofarnl.github.io/packpop2/articles
