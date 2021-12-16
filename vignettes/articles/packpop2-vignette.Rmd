@@ -56,7 +56,7 @@ As mentioned before, this data set has 14 variables
 | Shape_Length            | Surrounding a block in meter scale                     |
 | Shape_Area              | Surface area of a block in meter scale                 |
 | Area(Hectare)           | Surface area of a neighbourhoods in hectare scale      |
-| Population Density      | Population density of each neighbourhood               |
+| PopulationDensity      | Population density of each neighbourhood               |
 | Population              | Whole population of each neighbourhood                 |
 
 Also we can see the bar chart of population in each block
