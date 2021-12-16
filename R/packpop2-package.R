@@ -5,47 +5,47 @@
 ## usethis namespace: end
 NULL
 
-#' poppack2: A package with a minimum example of package creation.
+#' packpop2: A package with a minimum example of package creation.
 #'
 #' This package is an exercise in package creation using
 #' R studio. The package includes a sample function and
 #' a sample dataset with their respective documentation.
 #'
 #' @docType package
-#' @name poppack2-package
+#' @name packpop2
 #' @author Niloofar Nalaee, School of Earth, Environment and Society, McMaster University \email{nalaeen@@mcmaster.ca}
-#' @references \url{https://github.com/NiloofarNL/poppack}
+#' @references \url{https://github.com/NiloofarNL/packpop2}
 NULL
 
 #' Population of Mashhad in 2016.
 #'
-#' A dataset containing information about population based on number of families, owners, tenants and residential units of all neighbourhoods in Mashhad, Iran.
+#' A dataset containing information about population based on number of families, owners, tenants and residential units of all Neighbourhoods in Mashhad, Iran.
 #'
-#' @format A data frame with 19943 rows and 11 variables:
+#' @format A data frame with 173 rows and 14 variables:
 #' \describe{
-#'   \item{OBJECTID}{Id of each neighbourhoods as a factor}
-#'   \item{population}{Number of whole people living in a neighbourhoods}
-#'   \item{Family}{Number of families living in a neighbourhoods}
-#'   \item{Owners}{Number of people who has their own property in a neighbourhoods}
-#'   \item{Tenants}{Number of people who rent a property in a neighbourhoods}
-#'   \item{Residential Units}{Whole number of residencial suits in a neighbourhoods}
-#'   \item{Apartments Units}{Number of suits in apartments in a neighbourhoods}
-#'   \item{Houses Units}{Number of village houses in a neighbourhoods}
-#'   \item{Cottages or sheds}{Number of sheds in a neighbourhoods}
-#'   \item{Shape_Length}{Surrounding a neighbourhoods in meter scale}
-#'   \item{Shape_Area}{Surface area of a neighbourhoods in meter scale}
+#'   \item{OBJECTID}{Id of each block as a factor}
+#'   \item{Neighbourhoods}{The names of Mashhad's neighbourhoods}
+#'   \item{Family}{Number of families living in a block}
+#'   \item{Owners}{Number of people who has their own property in a block}
+#'   \item{Tenants}{Number of people who rent a property in a block}
+#'   \item{Total Residential Units}{Whole number of residencial suits in a block}
+#'   \item{Apartment Units}{Number of suits in apartments in a block}
+#'   \item{House Units}{Number of village houses in a block}
+#'   \item{Cottages or sheds}{Number of sheds in a block}
+#'   \item{Shape_Length}{Surrounding a block in meter scale}
+#'   \item{Shape_Area}{Surface area of a block in meter scale}
 #'   \item{Area(Hectare)}{Surface area of a neighbourhoods in hectare scale}
-#'   \item{Populatoin Density}{Population density of each neighbourhood}
-#'   \item{Populatoin}{Whole population of each neighbourhood}
+#'   \item{Population Density}{Population density of each neighbourhood}
+#'   \item{Population}{Whole population of each neighbourhood}
 #' }
 #'
 #' @docType data
 #' @keywords datasets
-#' @name pop2016
-#' @usage data(pop2016)
+#' @name Population2016
+#' @usage data(Population2016)
 #' @source (https://WWW.amar.org.ir)
 
 #' @examples
-#'  data(pop2016)
-#'  GDPPC <- pop2016$GDPPC
-"pop2016"
+#'  data(Population2016)
+#'  GDPPC <- Population2016$GDPPC
+"Population2016"
