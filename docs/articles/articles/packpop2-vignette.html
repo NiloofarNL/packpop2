@@ -107,8 +107,50 @@
     <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://remotes.r-lib.org">remotes</a></span><span class="op">)</span>
 <span class="op">}</span>
 <span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"NiloofarNL/packpop2"</span><span class="op">)</span></code></pre></div>
+<pre><code>##   
+  
+  
+   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\Rtmpa6E30g\remotes240c6981394f\NiloofarNL-packpop2-6c7ec60/DESCRIPTION' ...
+  
+   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\Rtmpa6E30g\remotes240c6981394f\NiloofarNL-packpop2-6c7ec60/DESCRIPTION' ... 
+  
+v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\Rtmpa6E30g\remotes240c6981394f\NiloofarNL-packpop2-6c7ec60/DESCRIPTION' (547ms)
+## 
+  
+  
+  
+-  preparing 'packpop2': (1.1s)
+##    checking DESCRIPTION meta-information ...
+  
+   checking DESCRIPTION meta-information ... 
+  
+v  checking DESCRIPTION meta-information
+## 
+  
+  
+  
+-  checking for LF line-endings in source and make files and shell scripts
+## 
+  
+  
+  
+-  checking for empty or unneeded directories
+## 
+  
+Removed empty directory 
+  
+   Removed empty directory 'packpop2/vignettes'
+## 
+  
+  
+  
+-  building 'packpop2_0.0.0.9000.tar.gz'
+## 
+  
+   
+## </code></pre>
 <p>Also a summary of this package can be seen by the chunk below:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NiloofarNL/packpop2">packpop2</a></span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">Population2016</span><span class="op">)</span></code></pre></div>
 <pre><code>##     OBJECTID   Neighbourhoods        Families         Owners    
@@ -144,7 +186,7 @@
 ##  Max.   :367.00    Max.   :71466  
 ##  NA's   :1</code></pre>
 <p>Following this, there is a list of libraries in this data set:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NiloofarNL/packpop2">packpop2</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/">knitr</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></code></pre></div>
@@ -208,14 +250,17 @@
 </tr>
 </tbody></table>
 <p>Also we can see the bar chart of population in each block</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">Population2016</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">OBJECTID</span>, y <span class="op">=</span> <span class="va">Population</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>stat <span class="op">=</span> <span class="st">"identity"</span><span class="op">)</span></code></pre></div>
 <p><img src="packpop2-vignette_files/figure-html/unnamed-chunk-2-1.png" width="700"></p>
 <div class="figure">
 <img src="MashhadDensity.png" alt=""><p class="caption">Population Density in Mashhad 2016</p>
 </div>
-<p>Here is another map <img src="MashhadNeighbours.png" alt="Mashhad’s Neighbourhoods in 2016"></p>
+<p>Here is another map</p>
+<div class="figure">
+<img src="MashhadNeighbours.png" alt=""><p class="caption">Mashhad’s Neighbourhoods in 2016</p>
+</div>
 <p><span class="citation">(Chen 2008)</span></p>
 <span class="math display">\[\begin{equation}
 \label{eq:1}

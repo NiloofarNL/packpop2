@@ -70,6 +70,8 @@ ggplot(data = Population2016, aes(x = OBJECTID, y = Population)) +
 ![Population Density in Mashhad 2016](MashhadDensity.png)
 
 Here is another map
+
+
 ![Mashhad's Neighbourhoods in 2016](MashhadNeighbours.png)
 
 [@chen2008wave]
