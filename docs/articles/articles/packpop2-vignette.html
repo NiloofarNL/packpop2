@@ -110,16 +110,16 @@
 <pre><code>##   
   
   
-   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\Rtmp42rI0f\remotes20e03d60597d\NiloofarNL-packpop2-ca64aa5/DESCRIPTION' ...
+   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpyKGvMp\remotes24683a8d3712\NiloofarNL-packpop2-9088dd7/DESCRIPTION' ...
   
-   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\Rtmp42rI0f\remotes20e03d60597d\NiloofarNL-packpop2-ca64aa5/DESCRIPTION' ... 
+   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpyKGvMp\remotes24683a8d3712\NiloofarNL-packpop2-9088dd7/DESCRIPTION' ... 
   
-v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\Rtmp42rI0f\remotes20e03d60597d\NiloofarNL-packpop2-ca64aa5/DESCRIPTION' (507ms)
+v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpyKGvMp\remotes24683a8d3712\NiloofarNL-packpop2-9088dd7/DESCRIPTION' (476ms)
 ## 
   
   
   
--  preparing 'packpop2': (493ms)
+-  preparing 'packpop2': (555ms)
 ##    checking DESCRIPTION meta-information ...
   
    checking DESCRIPTION meta-information ... 
@@ -152,41 +152,52 @@ Removed empty directory
 <p>Also a summary of this package can be seen by the chunk below:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NiloofarNL/packpop2">packpop2</a></span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">pop2016</span><span class="op">)</span></code></pre></div>
-<pre><code>##     OBJECTID       population         Family           Owners      
-##  Min.   :    1   Min.   :   0.0   Min.   :  0.00   Min.   :  0.00  
-##  1st Qu.: 4986   1st Qu.:  31.0   1st Qu.: 10.00   1st Qu.:  4.00  
-##  Median : 9972   Median : 105.0   Median : 33.00   Median : 14.00  
-##  Mean   : 9972   Mean   : 148.8   Mean   : 45.39   Mean   : 20.21  
-##  3rd Qu.:14958   3rd Qu.: 218.0   3rd Qu.: 67.00   3rd Qu.: 30.00  
-##  Max.   :19943   Max.   :9149.0   Max.   :771.00   Max.   :227.00  
-##     Tenants      Residential Units   Apartments         Houses      
-##  Min.   :  0.0   Min.   :  0.0     Min.   :  0.00   Min.   :  0.00  
-##  1st Qu.:  4.0   1st Qu.:  9.0     1st Qu.:  3.00   1st Qu.:  1.00  
-##  Median : 14.0   Median : 32.0     Median : 15.00   Median :  8.00  
-##  Mean   : 21.2   Mean   : 44.2     Mean   : 26.58   Mean   : 17.63  
-##  3rd Qu.: 31.0   3rd Qu.: 65.0     3rd Qu.: 38.00   3rd Qu.: 23.00  
-##  Max.   :285.0   Max.   :727.0     Max.   :477.00   Max.   :519.00  
-##  Cottage or shed    Shape_Length        Shape_Area      
-##  Min.   :0.00000   Min.   :    1.95   Min.   :       0  
-##  1st Qu.:0.00000   1st Qu.:  187.63   1st Qu.:    1631  
-##  Median :0.00000   Median :  313.31   Median :    4019  
-##  Mean   :0.01534   Mean   :  376.94   Mean   :    7936  
-##  3rd Qu.:0.00000   3rd Qu.:  455.17   3rd Qu.:    7062  
-##  Max.   :8.00000   Max.   :19152.58   Max.   :16225049</code></pre>
+<span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">Population2016</span><span class="op">)</span></code></pre></div>
+<pre><code>##     OBJECTID   Neighbourhoods        Families         Owners    
+##  Min.   :  1   Length:173         Min.   :    0   Min.   :   0  
+##  1st Qu.: 44   Class :character   1st Qu.: 2552   1st Qu.:1120  
+##  Median : 87   Mode  :character   Median : 4620   Median :2096  
+##  Mean   : 87                      Mean   : 5259   Mean   :2342  
+##  3rd Qu.:130                      3rd Qu.: 7034   3rd Qu.:3020  
+##  Max.   :173                      Max.   :20359   Max.   :8314  
+##                                   NA's   :1       NA's   :1     
+##     Tenants      Total Residential Units Apartment Units  House Units   
+##  Min.   :    0   Min.   :    0           Min.   :    0   Min.   :    0  
+##  1st Qu.: 1162   1st Qu.: 2478           1st Qu.: 1002   1st Qu.:  758  
+##  Median : 2174   Median : 4540           Median : 2391   Median : 1428  
+##  Mean   : 2456   Mean   : 5122           Mean   : 3079   Mean   : 2043  
+##  3rd Qu.: 3258   3rd Qu.: 6812           3rd Qu.: 4583   3rd Qu.: 2595  
+##  Max.   :10708   Max.   :19815           Max.   :12164   Max.   :13236  
+##  NA's   :1       NA's   :1               NA's   :1       NA's   :1      
+##  Cottages or Sheds  Shape_Length     Shape_Area       Area(Hectare)   
+##  Min.   : 0.000    Min.   : 1899   Min.   :  190576   Min.   :  19.0  
+##  1st Qu.: 0.000    1st Qu.: 4290   1st Qu.:  876015   1st Qu.:  88.0  
+##  Median : 1.000    Median : 5364   Median : 1368233   Median : 137.0  
+##  Mean   : 1.773    Mean   : 5857   Mean   : 1762437   Mean   : 176.3  
+##  3rd Qu.: 2.000    3rd Qu.: 6925   3rd Qu.: 2067674   3rd Qu.: 207.0  
+##  Max.   :48.000    Max.   :20888   Max.   :16678412   Max.   :1668.0  
+##  NA's   :1                                                            
+##  PopulationDensity   Population   
+##  Min.   :  0.00    Min.   :    0  
+##  1st Qu.: 76.75    1st Qu.: 8415  
+##  Median :131.00    Median :15387  
+##  Mean   :131.25    Mean   :17141  
+##  3rd Qu.:175.00    3rd Qu.:23460  
+##  Max.   :367.00    Max.   :71466  
+##  NA's   :1</code></pre>
 <p>Following this, there is a list of libraries in this data set:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NiloofarNL/packpop2">packpop2</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></code></pre></div>
-<p>As mentioned before, this data set has 11 variables</p>
+<p>As mentioned before, this data set has 14 variables</p>
 <table class="table"><tbody>
 <tr class="odd">
 <td>OBJECTID</td>
 <td>Id of each block as a factor</td>
 </tr>
 <tr class="even">
-<td>population</td>
-<td>Number of whole people living in a block</td>
+<td>Neighbourhoods</td>
+<td>The names of Mashhad’s neighbourhoods</td>
 </tr>
 <tr class="odd">
 <td>Family</td>
@@ -201,19 +212,19 @@ Removed empty directory
 <td>Number of people who rent a property in a block</td>
 </tr>
 <tr class="even">
-<td>Residential Units</td>
+<td>Total Residential Units</td>
 <td>Whole number of residential suits in a block</td>
 </tr>
 <tr class="odd">
-<td>Apartments</td>
+<td>Apartment Units</td>
 <td>Number of suits in apartments in a block</td>
 </tr>
 <tr class="even">
-<td>Houses</td>
+<td>House Units</td>
 <td>Number of village houses in a block</td>
 </tr>
 <tr class="odd">
-<td>Cottage or shed</td>
+<td>Cottages or sheds</td>
 <td>Number of sheds in a block</td>
 </tr>
 <tr class="even">
@@ -224,12 +235,48 @@ Removed empty directory
 <td>Shape_Area</td>
 <td>Surface area of a block in meter scale</td>
 </tr>
+<tr class="even">
+<td>Area(Hectare)</td>
+<td>Surface area of a neighbourhoods in hectare scale</td>
+</tr>
+<tr class="odd">
+<td>Population Density</td>
+<td>Population density of each neighbourhood</td>
+</tr>
+<tr class="even">
+<td>Population</td>
+<td>Whole population of each neighbourhood</td>
+</tr>
 </tbody></table>
 <p>Also we can see the bar chart of population in each block</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">pop2016</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">OBJECTID</span>, y <span class="op">=</span> <span class="va">population</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
+<code class="sourceCode R"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">Population2016</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">OBJECTID</span>, y <span class="op">=</span> <span class="va">Population</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>stat <span class="op">=</span> <span class="st">"identity"</span><span class="op">)</span></code></pre></div>
 <p><img src="packpop2-vignette_files/figure-html/unnamed-chunk-2-1.png" width="700"></p>
+<div class="figure" style="text-align: center">
+<img src="../../../../New%20folder_3/packpop2/vignettes/articles/MashhadDensity.png" alt="Population density in Mashhad 2016" width="70%"><p class="caption">
+Population density in Mashhad 2016
+</p>
+</div>
+<div class="figure" style="text-align: center">
+<img src="../../../../New%20folder_3/packpop2/vignettes/articles/MashhadNeighbours.png" alt="Mashhad's Neighbourhoods in 2016" width="70%"><p class="caption">
+Mashhad’s Neighbourhoods in 2016
+</p>
+</div>
+<p><span class="citation">(Chen 2008)</span></p>
+<span class="math display">\[\begin{equation}
+\label{eq:1}
+\rho(r) = \rho_0 exp (-br) = \rho_0 exp (-\frac{r}{r_0})
+\end{equation}\]</span>
+</div>
+<div id="bibliography" class="section level1 unnumbered">
+<h1 class="hasAnchor">
+<a href="#bibliography" class="anchor"></a>Bibliography</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-chen2008wave" class="csl-entry">
+Chen, Yanguang. 2008. <span>“A Wave-Spectrum Analysis of Urban Population Density: Entropy, Fractal, and Spatial Localization.”</span> <em>Discrete Dynamics in Nature and Society</em> 2008.
+</div>
+</div>
 </div>
   </div>
 
