@@ -66,11 +66,12 @@ ggplot(data = Population2016, aes(x = OBJECTID, y = Population)) +
   geom_bar(stat = "identity")
 ```
 
-```{r pressure, echo=FALSE, fig.cap="Population density in Mashhad 2016",fig.align = 'center', out.width = '70%'}
+```{r pressure, echo= FALSE, fig.cap="Population density in Mashhad 2016",fig.align = 'center', out.width = '70%'}
 knitr::include_graphics("MashhadDensity.png")
 ```
 
-```{r pressure2, echo=FALSE, fig.cap="Mashhad's Neighbourhoods in 2016",fig.align = 'center', out.width = '70%'}
+Here is another map
+```{r pressure2, echo= FALSE, fig.cap="Mashhad's Neighbourhoods in 2016",fig.align = 'center', out.width = '70%'}
 knitr::include_graphics("MashhadNeighbours.png")
 ```
 
