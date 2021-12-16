@@ -8,8 +8,9 @@
 
 The goal of packpop2 is to analyze information about population based on
 number of families, owners, tenants and residential units of all blocks
-in Mashhad, Iran. By clicking on
-[here](https://niloofarnl.github.io/packpop2/reference/population_density.html)
+in Mashhad, Iran. This data set reveals information helpful in aspect of population studies such as urban population density.
+
+By clicking on [here](https://niloofarnl.github.io/packpop2/reference/population_density.html)
 you can have access to the vignettes.
 
 ## Installation
