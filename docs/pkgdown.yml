@@ -3,5 +3,8 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   packpop2: packpop2.html
-last_built: 2021-12-16T20:18Z
+last_built: 2021-12-16T21:14Z
+urls:
+  reference: https://niloofarnl.github.io/packpop2/reference
+  article: https://niloofarnl.github.io/packpop2/articles
 
