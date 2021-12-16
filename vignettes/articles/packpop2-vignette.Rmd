@@ -52,7 +52,7 @@ As mentioned before, this data set has 14 variables
 | Total Residential Units | Whole number of residential suits in a block           |
 | Apartment Units         | Number of suits in apartments in a block               |
 | House Units             | Number of village houses in a block                    |
-| Cottages or sheds       | Number of sheds in a block                             |
+| Cottages or Sheds       | Number of sheds in a block                             |
 | Shape_Length            | Surrounding a block in meter scale                     |
 | Shape_Area              | Surface area of a block in meter scale                 |
 | Area(Hectare)           | Surface area of a neighbourhoods in hectare scale      |

@@ -31,7 +31,7 @@ NULL
 #'   \item{Total Residential Units}{Whole number of residencial suits in a block}
 #'   \item{Apartment Units}{Number of suits in apartments in a block}
 #'   \item{House Units}{Number of village houses in a block}
-#'   \item{Cottages or sheds}{Number of sheds in a block}
+#'   \item{Cottages or Sheds}{Number of sheds in a block}
 #'   \item{Shape_Length}{Surrounding a block in meter scale}
 #'   \item{Shape_Area}{Surface area of a block in meter scale}
 #'   \item{Area(Hectare)}{Surface area of a neighbourhoods in hectare scale}
