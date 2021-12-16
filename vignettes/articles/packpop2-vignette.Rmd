@@ -1,8 +1,4 @@
 ---
-
----
-
----
 title: "packpop2-vignette"
 bibliography: mybibfile.bib
 ---
@@ -71,9 +67,8 @@ ggplot(data = Population2016, aes(x = OBJECTID, y = Population)) +
   geom_bar(stat = "identity")
 ```
 
-![]()
 
-![](MashhadDensity.png)
+![](download.jpg)
 
 Here is another map
 
