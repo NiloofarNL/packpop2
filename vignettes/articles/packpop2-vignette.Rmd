@@ -65,15 +65,12 @@ Also we can see the bar chart of population in each block
 ggplot(data = Population2016, aes(x = OBJECTID, y = Population)) + 
   geom_bar(stat = "identity")
 ```
-
-```{r, MashhadDensity, echo= FALSE, fig.cap="Population density in Mashhad 2016",fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("MashhadDensity.png")
-```
+![Population density in Mashhad 2016](MashhadDensity.png)
 
 Here is another map
-```{r, MashhadNeighbours, echo= FALSE, fig.cap="Mashhad's Neighbourhoods in 2016",fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("MashhadNeighbours.png")
-```
+
+![Mashhad's Neighbourhoods in 2016](MashhadNeighbours.png)
+
 
 [@chen2008wave]
 
