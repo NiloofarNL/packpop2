@@ -1,4 +1,8 @@
 ---
+
+---
+
+---
 title: "packpop2-vignette"
 bibliography: mybibfile.bib
 ---
@@ -66,14 +70,16 @@ Also we can see the bar chart of population in each block
 ggplot(data = Population2016, aes(x = OBJECTID, y = Population)) + 
   geom_bar(stat = "identity")
 ```
-![Population density in Mashhad 2016](MashhadDensity.png)
+
+![]()
+
+![](MashhadDensity.png)
 
 Here is another map
 
 ```{r pressure, echo=FALSE, fig.cap="Mashhad's Neighbourhoods in 2016", out.width = '100%'}
 knitr::include_graphics("MashhadNeighbours.png")
 ```
-
 
 [@chen2008wave]
 

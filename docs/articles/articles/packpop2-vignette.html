@@ -110,16 +110,14 @@
 <pre><code>##   
   
   
-   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpUdFnLK\remotes2b8c32bf5685\NiloofarNL-packpop2-fa7b55e/DESCRIPTION' ...
+   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpAdlKV0\remotes36d0146c1265\NiloofarNL-packpop2-39569b0/DESCRIPTION' ...
   
-   checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpUdFnLK\remotes2b8c32bf5685\NiloofarNL-packpop2-fa7b55e/DESCRIPTION' ... 
-  
-v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpUdFnLK\remotes2b8c32bf5685\NiloofarNL-packpop2-fa7b55e/DESCRIPTION' (448ms)
+v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpAdlKV0\remotes36d0146c1265\NiloofarNL-packpop2-39569b0/DESCRIPTION' (522ms)
 ## 
   
   
   
--  preparing 'packpop2': (474ms)
+-  preparing 'packpop2': (490ms)
 ##    checking DESCRIPTION meta-information ...
   
    checking DESCRIPTION meta-information ... 
@@ -188,10 +186,8 @@ Removed empty directory
 <p>Following this, there is a list of libraries in this data set:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/NiloofarNL/packpop2">packpop2</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/">knitr</a></span><span class="op">)</span></code></pre></div>
-<pre><code>## Warning: package 'knitr' was built under R version 4.1.2</code></pre>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></code></pre></div>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/">knitr</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></code></pre></div>
 <p>As mentioned before, this data set has 14 variables</p>
 <table class="table"><tbody>
 <tr class="odd">
@@ -252,7 +248,7 @@ Removed empty directory
 </tr>
 </tbody></table>
 <p>Also we can see the bar chart of population in each block</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">Population2016</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">OBJECTID</span>, y <span class="op">=</span> <span class="va">Population</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>stat <span class="op">=</span> <span class="st">"identity"</span><span class="op">)</span></code></pre></div>
 <p><img src="packpop2-vignette_files/figure-html/unnamed-chunk-2-1.png" width="700"><img src="../../../../New%20folder_3/packpop2/vignettes/articles/MashhadDensity.png" alt="Population density in Mashhad 2016"></p>
