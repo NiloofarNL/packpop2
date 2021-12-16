@@ -1,13 +1,14 @@
 ---
 title: "packpop2-vignette"
+bibliography: mybibfile.bib
 ---
 ## packpop2
 
-This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each block in 2016. There a number of different targets that can be reached through this package such as population density  This dataset contains 11 variables and 19943 rows.    
+This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each block in 2016. There a number of different targets that can be reached through this package such as population density This dataset contains 11 variables and 19943 rows.
 
 [source](https://amar.org.ir/)
 
-# Install the package
+## Install the package
 
 As a fundamental step, there is a need to install population package if you want to use this data set.
 
@@ -60,3 +61,20 @@ Also we can see the bar chart of population in each block
 ggplot(data = pop2016, aes(x = OBJECTID, y = population)) + 
   geom_bar(stat = "identity")
 ```
+
+```{r pressure, echo=FALSE, fig.cap="Population density in Mashhad 2016",fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("MashhadDensity.png")
+```
+
+```{r pressure2, echo=FALSE, fig.cap="Mashhad's Neighbourhoods in 2016",fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("MashhadNeighbours.png")
+```
+[@chen2008wave]
+```{=tex}
+\begin{equation}
+\label{eq:1}
+\rho(r) = \rho_0 exp (-br) = \rho_0 exp (-\frac{r}{r_0})
+\end{equation}
+```
+
+# Bibliography
