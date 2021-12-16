@@ -2,6 +2,7 @@
 title: "packpop2-vignette"
 bibliography: mybibfile.bib
 ---
+
 ## packpop2
 
 This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each block in 2016. There a number of different targets that can be reached through this package such as population density This dataset contains 11 variables and 19943 rows.
@@ -27,7 +28,7 @@ Also a summary of this package can be seen by the chunk below:
 
 ```{r}
 library(packpop2)
-summary(pop2016)
+summary(Population2016)
 
 ```
 
@@ -39,26 +40,29 @@ library(ggplot2)
 
 ```
 
-As mentioned before, this data set has 11 variables
+As mentioned before, this data set has 14 variables
 
-|                   |                                                        |
-|-------------------|--------------------------------------------------------|
-| OBJECTID          | Id of each block as a factor                           |
-| population        | Number of whole people living in a block               |
-| Family            | Number of families living in a block                   |
-| Owners            | Number of people who has their own property in a block |
-| Tenants           | Number of people who rent a property in a block        |
-| Residential Units | Whole number of residential suits in a block           |
-| Apartments        | Number of suits in apartments in a block               |
-| Houses            | Number of village houses in a block                    |
-| Cottage or shed   | Number of sheds in a block                             |
-| Shape_Length      | Surrounding a block in meter scale                     |
-| Shape_Area        | Surface area of a block in meter scale                 |
+|                         |                                                        |
+|-------------------------|--------------------------------------------------------|
+| OBJECTID                | Id of each block as a factor                           |
+| Neighbourhoods          | The names of Mashhad's neighbourhoods                  |
+| Family                  | Number of families living in a block                   |
+| Owners                  | Number of people who has their own property in a block |
+| Tenants                 | Number of people who rent a property in a block        |
+| Total Residential Units | Whole number of residential suits in a block           |
+| Apartment Units         | Number of suits in apartments in a block               |
+| House Units             | Number of village houses in a block                    |
+| Cottages or sheds       | Number of sheds in a block                             |
+| Shape_Length            | Surrounding a block in meter scale                     |
+| Shape_Area              | Surface area of a block in meter scale                 |
+| Area(Hectare)           | Surface area of a neighbourhoods in hectare scale      |
+| Population Density      | Population density of each neighbourhood               |
+| Population              | Whole population of each neighbourhood                 |
 
 Also we can see the bar chart of population in each block
 
 ```{r}
-ggplot(data = pop2016, aes(x = OBJECTID, y = population)) + 
+ggplot(data = Population2016, aes(x = OBJECTID, y = Population)) + 
   geom_bar(stat = "identity")
 ```
 
@@ -69,12 +73,13 @@ knitr::include_graphics("MashhadDensity.png")
 ```{r pressure2, echo=FALSE, fig.cap="Mashhad's Neighbourhoods in 2016",fig.align = 'center', out.width = '70%'}
 knitr::include_graphics("MashhadNeighbours.png")
 ```
+
 [@chen2008wave]
+
 ```{=tex}
 \begin{equation}
 \label{eq:1}
 \rho(r) = \rho_0 exp (-br) = \rho_0 exp (-\frac{r}{r_0})
 \end{equation}
 ```
-
 # Bibliography
